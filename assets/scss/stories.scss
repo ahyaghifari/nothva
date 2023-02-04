@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    background: rgb(110, 0, 0);
+        background: linear-gradient(289deg, rgb(180, 5, 5) 0%, rgba(0, 0, 0, 1) 50%);
+}
+
+.stories:hover{
+    transition: 0.3s all ease-in-out;
+    transform: scale(95%);
+    background-color: maroon;
+}
+
+
+.single-stories{
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.61);
+}

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap");
+
+$bebas: "Bebas Neue", cursive;
+
+::-webkit-scrollbar {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #950101;
+}
+
+#nav-admin {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1.3rem;
+  background-color: rgb(18, 18, 18);
+  height: 100vh;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -10;
+  transition: 0.3s all ease-in-out;
+  a {
+    color: #ff0000;
+    font-size: 1.4rem;
+    margin-bottom: 1vh;
+    font-weight: 300;
+  }
+}
+
+#nav-admin.active {
+  opacity: 100%;
+  z-index: 10;
+  transform: translateX(0);
+}
+
+#main-content {
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1.3rem;
+}
+
+.titles {
+  color: white;
+  font-size: 2.2rem;
+  font-family: $bebas;
+}
+
+.parts {
+  margin-bottom: 5vh;
+}
+
+.parts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.parts-title {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.parts-container {
+  margin: 2vh 0;
+}
+
+.parts-text {
+  color: white;
+  font-size: small;
+}
+
+.parts-images {
+  width: 30%;
+  object-fit: contain;
+}
+
+.era-images {
+  background-color: rgb(18, 18, 18);
+}
+
+// FORMS
+form {
+  overflow: hidden;
+  margin: 1vh 0 0 2vh 0;
+  label {
+    color: white;
+    margin: 0 1vw 2vh 0;
+    font-size: 1.1rem;
+  }
+  input,
+  textarea {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(92, 92, 92);
+    padding: 0.7rem;
+    width: 100%;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #ff0000;
+  }
+  input[type='submit'], input[type='file']{
+    width: fit-content;
+    font-size: small;
+  }
+  .checkbox-input {
+    background-color: #ff0000;
+    width: fit-content;
+  }
+  .form-components {
+    margin: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-components.row {
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .form-components.row.grid {
+    width: 100%;
+  }
+  .cu-btn {
+    background-color: #ff0000;
+    padding: 4px 4px;
+    border: none;
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #ff0000;
+    transition: 0.3s all ease-in-out;
+  }
+  .cu-btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  .form-delete-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 2px 4px;
+    color: white;
+  }
+  .file-input-image{
+    width: fit-content;
+  }
+}
+
+.form-back-btn{
+  color: #ff0000;
+  font-size: smaller;
+}
+
+@media (min-width: 768px) {
+  #nav-admin {
+    width: 15%;
+    position: static;
+    transform: translateX(0);
+    opacity: 100%;
+    visibility: visible;
+    z-index: 1;
+  }
+  #main-content {
+    width: 85%;
+  }
+  .content {
+    width: 80%;
+  }
+  form {
+    .form-components.row {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .titles {
+    font-size: 3.5rem;
+  }
+  .parts {
+    margin-bottom: 10vh;
+  }
+  .parts-title {
+    font-size: 1.5rem;
+  }
+  .parts-text {
+    font-size: medium;
+  }
+  .parts-images {
+    width: 25%;
+  }
+  form {
+    .form-components.row {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+#about {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.473);
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+#about.bg-about {
+  background-image: url("../../src/bg/bg-about-default.png");
+}
+
+@media (min-width: 768px) {
+  #about {
+    background-size: contain;
+  }
+  #about.bg-about {
+    background-size: cover;
+  }
+}/*# sourceMappingURL=about.css.map */

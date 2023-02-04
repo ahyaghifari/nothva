@@ -1,0 +1,19 @@
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(320deg, rgb(0, 0, 0) 0%, rgb(45, 0, 0) 32%, rgb(0, 0, 0) 77%, rgb(40, 0, 0) 100%);
+}
+
+#index #index-image, #index #index-title, #index #index-text {
+  z-index: -1 !important;
+}
+
+.owl-carousel {
+  overflow: hidden !important;
+}
+
+.owl-stage {
+  height: 45vh;
+}
+.owl-stage .owl-item {
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,21 @@
+body{
+    background: rgb(0, 0, 0);
+        background: linear-gradient(320deg, rgba(0, 0, 0, 1) 0%, rgba(45, 0, 0, 1) 32%, rgba(0, 0, 0, 1) 77%, rgba(40, 0, 0, 1) 100%);
+}
+
+#index{
+   #index-image, #index-title, #index-text{
+        z-index: -1 !important;
+    }
+}
+
+.owl-carousel{
+    overflow: hidden !important;
+}
+.owl-stage{
+    height: 45vh;
+    .owl-item{
+        height: 100%;
+            // overflow: hidden !important;
+    }
+}
